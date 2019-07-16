@@ -129,10 +129,10 @@ lm4 <- lm(Party_pressAsec_outgroupABS ~ income + relig_att + female + white + pa
             EmoStability_avg + Openness_avg + Conscientious_avg + Bis_avg + Bas_avg, data = data)
 summary(lm4)
 
-
-stargazer(lm1, lm2, lm3, lm4, title = "Regression Results",
-          dep.var.labels = c("Positive", "Negative", "Positive Political", "Negative Political"),
-          covariate.labels = c("Income", "Religiosity", "Female", "White", "Republicans", "Ideological Extremity", "Extraversion", "Agreeableness",
-                               "Emotional Stability", "Openness", "Conscientiousness", "BIS", "BAS"),
-          omit.stat = c("LL", "ser", "f"), type = 'text')
 # 
+# stargazer(lm1, lm2, lm3, lm4, title = "Regression Results",
+#           dep.var.labels = c("Positive", "Negative", "Positive Political", "Negative Political"),
+#           covariate.labels = c("Income", "Religiosity", "Female", "White", "Republicans", "Ideological Extremity", "Extraversion", "Agreeableness",
+#                                "Emotional Stability", "Openness", "Conscientiousness", "BIS", "BAS", "Interaction"),
+#           omit.stat = c("LL", "ser", "f"), type = 'text')
+############ NO Interaction #########
